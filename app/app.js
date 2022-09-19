@@ -68,17 +68,16 @@ function initListeners() {
 
     console.log(people);
 
-    // for (let i = 0; i < people.length; i++) {
-    // $("#peopleList").append(`<li>${people[i].fname} ${people[i].lname}</li>`);
-    // }
 		$("#peopleList").html(``);
-
 
     people.forEach((person) => {
 			let classList = '';
-			person.classes.forEach((c) => {
-				classList += `${c}, `;
-			})
+			person.classes.forEach((c, i) => {
+				if(i != person.classes.length - 1) {
+				classList += `${c}, `;		
+				} else {
+					classList += c;
+				}})
       $("#peopleList").append(`
 				<li>
 					<h3>${person.fname} ${person.lname}</h3>
