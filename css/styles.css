@@ -23,8 +23,12 @@ p {
 
 #app {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
+}
+
+#app div {
+	margin-right: 2rem;
 }
 
 input {
@@ -45,6 +49,8 @@ button {
 
 ul {
   margin-top: 10px;
+	margin-left: 2rem;
+	width: 300px;
 }
 
 form {

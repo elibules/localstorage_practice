@@ -37,7 +37,7 @@ function initListeners() {
 				email: email,
 				phone: phone,
 				classes: classes
-      };
+			};
 
       $("#fname").val("");
       $("#lname").val("");
