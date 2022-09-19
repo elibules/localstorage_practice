@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="lib/jquery.min.js" defer></script>
+    <script src="app/model.js" type="module" defer></script>
+    <script src="app/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+		<div id="app">
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" />
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" />
+			<label for="age">Age</label>
+      <input type="number" id="age" />
+			<label for="age">Email</label>
+      <input type="email" id="email" />
+      <label for="phone">Phone Number</label>
+      <input type="phone" id="phone" />
+			<label for="classes">Classes</label>
+			<div id="classes">
+				<input class="classInput" type="text"/>
+			</div>
+			<button id="addClass">Add Class</button>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+		<div>
+    <button id="getNames">Get All Students</button>
+      <ul id="peopleList"></ul>
+		<div/>
+		</div>
+  </body>
+</html>
